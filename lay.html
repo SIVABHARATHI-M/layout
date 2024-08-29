@@ -1,0 +1,129 @@
+<html>
+    <title>Layout Page</title>
+    <head></head>
+    <style>
+        header{
+            display:flex;
+            flex-direction: row;
+            height:100px;
+            border:1px solid black;
+        }
+        .left{
+            height:inherit;
+            width:10%;
+            background-color: bisque;
+            background-image: url("hote.jpg");
+            background-size: cover;
+        }
+        .right{
+            height:inherit;
+            width:100%;
+            color:navajowhite;
+            background-color: rgb(5, 113, 5);
+        }
+        h1{
+            text-align:center;
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+        h2{
+            text-align:center;
+            color:blanchedalmond;
+            text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+        }
+        
+        nav{
+            height:50px;
+            display:flex;
+            flex-direction:row;
+            background-color: rgb(57, 150, 119);
+        }
+        a{
+            color:aliceblue;
+            text-decoration: none;
+            font-size:medium;
+            font-style: italic;
+        }
+        .n{
+            height:inherit;
+            width: 20%;
+            
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .n:hover{
+            background-color: black;
+            transition: 2s;
+        }
+        section{
+            height:400px;
+            display:flex;
+            flex-direction: row;
+        }
+        .s1{
+            height:inherit;
+            width:20%;
+            background-color:#36a476;
+        }
+        .s2{
+            height:inherit;
+            width:60%;
+            background-color:#92F2A9;
+            font-size: larger;
+            background-image: url("imghotel.jpeg");
+            background-size: cover;
+        }
+        .s3{
+            height:inherit;
+            width:20%;
+            background-color:#36a476;
+            
+        }
+        marquee{
+            color:beige;
+            height:inherit;
+        }
+        footer{
+            height:50px;
+            width:100%;
+            background-color: rgb(52, 122, 52);
+            color:blanchedalmond
+        }
+        p{
+            text-align: end;
+        }
+    </style>
+    <body>
+        <header>
+            <div class="left"></div>
+            <div class="right">
+                <h1><i>ARAX TECH STUDIO</i></h1>
+                <p>-Dholakpur,Los Angels,Valeriya.</p>
+            </div>
+        </header>
+        <nav>
+            <div class="n"><a href="">Home</a></div>
+            <div class="n"><a href="">About</a></div>
+            <div class="n"><a href="">Help</a></div>
+            <div class="n"><a href="">Contact Us</a></div>
+            <div class="n"><a href="">Working Time</a></div>
+        </nav>
+        <section>
+            <div class="s1">
+                <marquee direction="up" onmouseout="this.start()" onmouseover="this.stop()">
+                    <h3>Internships</h3>
+                    <h3>Certifications</h3>
+                    <h3>Interview</h3>
+                </marquee>
+            </div>
+            <div class="s2">
+            </div>
+            <div class="s3">
+                Everyone is better in their work!!!!
+            </div>
+        </section>
+        <footer>
+            <h1>Thank You!!!!!</h1>
+        </footer>
+    </body>
+</html>
